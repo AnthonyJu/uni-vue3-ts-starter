@@ -39,7 +39,8 @@
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint . --fix",
     "lint:style": "stylelint **/*.{css,scss,vue} --fix",
-    "up": "taze major -I"
+    "up": "taze major -I",
+    "postinstall": "npx simple-git-hooks"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-3080720230703001",
@@ -70,7 +71,9 @@
     "@dcloudio/vite-plugin-uni": "3.0.0-3080720230703001",
     "@vue/tsconfig": "^0.4.0",
     "eslint": "^8.46.0",
+    "lint-staged": "^13.2.3",
     "sass": "^1.64.2",
+    "simple-git-hooks": "^2.9.0",
     "stylelint": "^15.10.2",
     "typescript": "^5.1.6",
     "unocss": "^0.54.1",
@@ -79,5 +82,11 @@
     "unplugin-vue-components": "^0.25.1",
     "vite": "4.1.4",
     "vue-tsc": "^1.8.8"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }

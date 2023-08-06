@@ -9,8 +9,8 @@
 </template>
 
 <script setup lang="ts">
-import Counter from '@/components/Counter.vue'
 import { ref } from 'vue'
+import Counter from '@/components/Counter.vue'
 
 const title = ref('Hello')
 </script>
