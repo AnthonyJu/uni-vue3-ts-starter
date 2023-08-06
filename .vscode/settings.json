@@ -1,0 +1,12 @@
+{
+  "cSpell.words": [
+    "automator",
+    "kuaishou",
+    "toutiao",
+    "Weapp"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": false,
+}
