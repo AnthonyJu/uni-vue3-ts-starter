@@ -1,3 +1,13 @@
 {
-  "extends": "@anthony-ju/stylelint-config"
+  "extends": "@anthony-ju/stylelint-config",
+  "rules": {
+    "unit-no-unknown": [
+      true,
+      {
+        "ignoreUnits": [
+          "rpx"
+        ]
+      }
+    ]
+  }
 }

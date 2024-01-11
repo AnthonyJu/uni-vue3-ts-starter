@@ -16,14 +16,10 @@ export default defineConfig({
     uni({
       vueOptions: {
         script: {
-          defineModel: true,
           propsDestructure: true,
         },
       },
     }),
-
-    // https://github.com/antfu/unocss
-    Unocss(),
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
@@ -39,5 +35,8 @@ export default defineConfig({
       vueTemplate: true,
       dts: 'src/auto-imports.d.ts',
     }),
+
+    // https://github.com/antfu/unocss
+    Unocss(),
   ],
 })

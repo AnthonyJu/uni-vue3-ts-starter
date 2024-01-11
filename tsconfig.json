@@ -1,20 +1,19 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "sourceMap": true,
     "lib": [
       "esnext",
       "dom"
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["src/*"]
     },
     "types": [
+      "vite/client",
       "@dcloudio/types"
-    ]
+    ],
+    "sourceMap": true
   },
   "include": [
     "src/**/*.ts",
@@ -24,6 +23,7 @@
   ],
   "exclude": [
     "dist",
-    "node_modules"
+    "node_modules",
+    "eslint.config.js"
   ]
 }

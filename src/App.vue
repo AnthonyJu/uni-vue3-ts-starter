@@ -14,7 +14,3 @@ onHide(() => {
   console.log('App Hide')
 })
 </script>
-
-<style>
-
-</style>
