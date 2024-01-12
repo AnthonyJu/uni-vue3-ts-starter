@@ -1,7 +1,7 @@
-import antfu from '@antfu/eslint-config'
-import { ignores, rules } from '@anthony-ju/eslint-config'
+const antfu = require('@antfu/eslint-config').default
+const { ignores, rules } = require('@anthony-ju/eslint-config')
 
-export default antfu(
+module.exports = antfu(
   {
     rules,
     ignores,

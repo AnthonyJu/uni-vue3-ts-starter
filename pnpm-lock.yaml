@@ -62,8 +62,8 @@ devDependencies:
     specifier: ^2.6.2
     version: 2.6.2(@vue/compiler-sfc@3.4.10)(eslint-plugin-format@0.1.0)(eslint@8.56.0)(typescript@5.3.3)
   '@anthony-ju/eslint-config':
-    specifier: ^0.2.4
-    version: 0.2.4
+    specifier: ^0.2.5
+    version: 0.2.5
   '@anthony-ju/stylelint-config':
     specifier: ^0.2.8
     version: 0.2.8(postcss@8.4.33)(stylelint@16.1.0)
@@ -86,8 +86,8 @@ devDependencies:
     specifier: ^0.58.3
     version: 0.58.3(eslint@8.56.0)(typescript@5.3.3)
   '@vue/runtime-core':
-    specifier: ^3.4.9
-    version: 3.4.10
+    specifier: ^3.2.47
+    version: 3.2.47
   '@vue/tsconfig':
     specifier: ^0.5.1
     version: 0.5.1
@@ -251,8 +251,8 @@ packages:
   /@antfu/utils@0.7.7:
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
 
-  /@anthony-ju/eslint-config@0.2.4:
-    resolution: {integrity: sha512-9usBg68ZB/U1hHvZ4tY3m+vqZ+2qHKrG3eVhtIfzaJvlE/hVa98W5T+7te++X2R7lI64Qt7wAlBie47ZeriJDQ==}
+  /@anthony-ju/eslint-config@0.2.5:
+    resolution: {integrity: sha512-bdyplfsCQabvT5GiSEXsMrd0PzJbaIcy2vI8TD+8P4LUw6SUYKy6+x+IojfmYzU3Waus5h//yjXt6Ga12w5iyw==}
     dev: true
 
   /@anthony-ju/stylelint-config@0.2.8(postcss@8.4.33)(stylelint@16.1.0):
@@ -4278,24 +4278,11 @@ packages:
     dependencies:
       '@vue/shared': 3.2.47
 
-  /@vue/reactivity@3.4.10:
-    resolution: {integrity: sha512-SmGGpo37LzPcAFTopHNIJRNVOQfma9YgyPkAzx9/TJ01lbCCYigS28hEcY1hjiJ1PRK8iVX62Ov5yzmUgYH/pQ==}
-    dependencies:
-      '@vue/shared': 3.4.10
-    dev: true
-
   /@vue/runtime-core@3.2.47:
     resolution: {integrity: sha512-RZxbLQIRB/K0ev0K9FXhNbBzT32H9iRtYbaXb0ZIz2usLms/D55dJR2t6cIEUn6vyhS3ALNvNthI+Q95C+NOpA==}
     dependencies:
       '@vue/reactivity': 3.2.47
       '@vue/shared': 3.2.47
-
-  /@vue/runtime-core@3.4.10:
-    resolution: {integrity: sha512-Ri2Cz9sFr66AEUewGUK8IXhIUAhshTHVUGuJR8pqMbtjIds+zPa8QPO5UZImGMQ8HTY7eEpKwztCct9V3+Iqug==}
-    dependencies:
-      '@vue/reactivity': 3.4.10
-      '@vue/shared': 3.4.10
-    dev: true
 
   /@vue/runtime-dom@3.2.47:
     resolution: {integrity: sha512-ArXrFTjS6TsDei4qwNvgrdmHtD930KgSKGhS5M+j8QxXrDJYLqYw4RRcDy1bz1m1wMmb6j+zGLifdVHtkXA7gA==}

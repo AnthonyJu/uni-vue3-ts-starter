@@ -63,7 +63,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.2",
-    "@anthony-ju/eslint-config": "^0.2.4",
+    "@anthony-ju/eslint-config": "^0.2.5",
     "@anthony-ju/stylelint-config": "^0.2.8",
     "@dcloudio/types": "^3.4.7",
     "@dcloudio/uni-automator": "3.0.0-3090920231225001",
@@ -71,7 +71,7 @@
     "@dcloudio/uni-stacktracey": "3.0.0-3090920231225001",
     "@dcloudio/vite-plugin-uni": "3.0.0-3090920231225001",
     "@unocss/eslint-config": "^0.58.3",
-    "@vue/runtime-core": "^3.4.9",
+    "@vue/runtime-core": "^3.2.47",
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^8.56.0",
     "eslint-plugin-format": "^0.1.0",
