@@ -11,6 +11,7 @@ node_modules
 .DS_Store
 dist
 *.local
+.hbuilderx
 
 # Editor directories and files
 .idea
@@ -19,3 +20,7 @@ dist
 *.njsproj
 *.sln
 *.sw?
+
+auto-imports.d.ts
+components.d.ts
+uni-pages.d.ts
