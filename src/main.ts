@@ -6,8 +6,10 @@ import 'uno.css'
 export function createApp() {
   const app = createSSRApp(App)
 
-  const pinia = createPinia()
-  app.use(pinia)
+  const modules = import.meta.glob('./modules/*.ts', { eager: true })
+  Object.values(modules).reverse().forEach((ctx: any) => {
+    ctx.default?.(app)
+  })
 
   return {
     app,

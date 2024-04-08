@@ -1,8 +1,8 @@
 <template>
   <view class="content text-center">
-    <image class="logo" src="/static/logo.png" />
+    <image class="logo" src="@/static/vite.png" />
     <view class="text-area">
-      <text class="text-40rpx text-red" bg-blue p="2">{{ title }}</text>
+      <text class="text-40rpx text-red" p="2" mb-10px bg-blue>{{ title }}</text>
     </view>
     <Counter />
   </view>
