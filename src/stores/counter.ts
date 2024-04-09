@@ -1,20 +1,10 @@
-export const useCounterStore = defineStore(
-  'counter',
-  () => {
-    const count = ref(0)
-    const inc = () => {
-      count.value++
-    }
-    const dec = () => {
-      count.value--
-    }
-    return {
-      count,
-      dec,
-      inc,
-    }
+export const useCounterStore = defineStore('counter', {
+  state: () => ({
+    count: 0,
+  }),
+  actions: {
+    add() {
+      this.count++
+    },
   },
-  {
-    persist: true,
-  },
-)
+})

@@ -11,7 +11,6 @@ node_modules
 .DS_Store
 dist
 *.local
-.hbuilderx
 
 # Editor directories and files
 .idea
@@ -21,6 +20,4 @@ dist
 *.sln
 *.sw?
 
-src/auto-imports.d.ts
-src/components.d.ts
-src/uni-pages.d.ts
+.hbuilderx

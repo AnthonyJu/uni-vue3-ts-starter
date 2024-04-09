@@ -1,23 +1,19 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "ignoreDeprecations": "5.0",
-    "lib": ["esnext", "dom"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     },
     "types": [
       "vite/client",
-      "@dcloudio/types",
-      "@types/wechat-miniprogram",
-      "@uni-helper/uni-app-types"
+      "@dcloudio/types"
     ],
-    "sourceMap": false
-  },
-  "vueCompilerOptions": {
-    "target": 3,
-    "nativeTags": ["block", "component", "template", "slot"]
+    "sourceMap": true
   },
   "include": [
     "src/**/*.ts",
@@ -30,5 +26,4 @@
     "node_modules",
     "eslint.config.js"
   ]
-
 }

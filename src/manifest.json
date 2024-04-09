@@ -1,5 +1,5 @@
 {
-  "name": "vitesse-uniapp",
+  "name": "",
   "appid": "",
   "description": "",
   "versionName": "1.0.0",
@@ -46,9 +46,7 @@
     "setting": {
       "urlCheck": false
     },
-    "usingComponents": true,
-    "darkmode": true,
-    "themeLocation": "theme.json"
+    "usingComponents": true
   },
   "mp-alipay": {
     "usingComponents": true
@@ -62,10 +60,5 @@
   "uniStatistics": {
     "enable": false
   },
-  "vueVersion": "3",
-  "locale": "zh-Hans",
-  "h5": {
-    "darkmode": true,
-    "themeLocation": "theme.json"
-  }
+  "vueVersion": "3"
 }

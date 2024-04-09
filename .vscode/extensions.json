@@ -1,11 +1,13 @@
 {
   "recommendations": [
-    "antfu.vite",
     "antfu.iconify",
     "antfu.unocss",
-    "vue.volar",
+    "antfu.vite",
+    "antfu.goto-alias",
+    "csstools.postcss",
     "dbaeumer.vscode-eslint",
-    "editorConfig.editorConfig",
-    "uni-helper.uni-helper-vscode"
+    "vue.volar",
+    "streetsidesoftware.code-spell-checker",
+    "stylelint.vscode-stylelint"
   ]
 }

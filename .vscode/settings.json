@@ -15,7 +15,8 @@
     "vitejs",
     "Vitesse",
     "vitest",
-    "vueuse"
+    "vueuse",
+    "Weapp"
   ],
 
   // Disable the default formatter
@@ -58,10 +59,5 @@
     "json",
     "jsonc",
     "yaml"
-  ],
-
-  "explorer.fileNesting.patterns": {
-    ".env": ".env.*",
-    "vite.config.*": "pages.config.*, manifest.config.*, uno.config.*, volar.config.*,tsconfig.*"
-  }
+  ]
 }

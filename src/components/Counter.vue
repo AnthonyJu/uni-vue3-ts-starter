@@ -1,17 +1,10 @@
 <template>
-  <view inline-flex m="y-3">
-    <button class="btn" @click="counter.dec()">
-      <text i-carbon-subtract />
-    </button>
-    <view font="mono" w="15" m-auto inline-block>
-      {{ counter.count }}
-    </view>
-    <button class="btn" @click="counter.inc()">
-      <text i-carbon-add />
-    </button>
-  </view>
+  <div>
+    <div>{{ counter.count }}</div>
+    <uv-button type="primary" text="增加" @click="counter.add()" />
+  </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang='ts'>
 const counter = useCounterStore()
 </script>
