@@ -16,6 +16,5 @@ onHide(() => {
 </script>
 
 <style lang="scss">
-@import '@climblee/uv-ui/index.scss';
 @import '@/styles/index.scss';
 </style>

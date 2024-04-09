@@ -1,7 +1,10 @@
 import axios from 'axios'
 import { createUniAppAxiosAdapter } from '@uni-helper/axios-adapter'
 
-const request = axios.create({ adapter: createUniAppAxiosAdapter() })
+const request = axios.create({
+  baseURL: import.meta.env.VITE_SERVER_BASEURL,
+  adapter: createUniAppAxiosAdapter(),
+})
 
 // request 拦截器
 request.interceptors.request.use(

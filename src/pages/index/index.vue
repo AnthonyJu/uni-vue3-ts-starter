@@ -16,6 +16,8 @@ const title = ref('Hello World!')
 
 // eslint-disable-next-line no-console
 console.log('title', title.value)
+
+request('/test')
 </script>
 
 <style lang="scss">
