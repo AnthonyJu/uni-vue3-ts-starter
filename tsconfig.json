@@ -11,6 +11,7 @@
     },
     "types": [
       "vite/client",
+      "weixin-app",
       "@dcloudio/types"
     ],
     "sourceMap": true
