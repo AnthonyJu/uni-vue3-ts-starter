@@ -4,7 +4,6 @@
   "description": "",
   "versionName": "1.0.0",
   "versionCode": "100",
-  "transformPx": false,
   "app-plus": {
     "usingComponents": true,
     "nvueStyleCompiler": "uni-app",
@@ -12,8 +11,7 @@
     "splashscreen": {
       "alwaysShowBeforeRender": true,
       "waiting": true,
-      "autoclose": true,
-      "delay": 0
+      "autoclose": true
     },
     "modules": {},
     "distribute": {
@@ -44,8 +42,14 @@
   "mp-weixin": {
     "appid": "",
     "setting": {
-      "urlCheck": false
+      "urlCheck": false,
+      "es6": true,
+      "ignoreDevUnusedFiles": false,
+      "minifyWXML": true,
+      "minifyWXSS": true,
+      "minified": true
     },
+    "lazyCodeLoading": "requiredComponents",
     "usingComponents": true
   },
   "mp-alipay": {

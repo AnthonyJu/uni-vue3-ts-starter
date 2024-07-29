@@ -8,7 +8,7 @@
   </view>
 </template>
 
-<script setup lang="ts">
+<script setup>
 // 小程序下需要手动引入
 import Counter from '@/components/Counter.vue'
 

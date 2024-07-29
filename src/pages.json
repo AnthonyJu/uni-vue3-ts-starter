@@ -7,7 +7,13 @@
       }
     },
     {
-      "path": "pages/mine/mine",
+      "path": "pages/paging/index",
+      "style": {
+        "navigationBarTitleText": "滚动"
+      }
+    },
+    {
+      "path": "pages/mine/index",
       "style": {
         "navigationBarTitleText": "我的"
       }
@@ -26,7 +32,13 @@
         "selectedIconPath": "static/logo.png"
       },
       {
-        "pagePath": "pages/mine/mine",
+        "pagePath": "pages/paging/index",
+        "text": "滚动",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
         "text": "我的",
         "iconPath": "static/logo.png",
         "selectedIconPath": "static/logo.png"
@@ -42,7 +54,8 @@
   "easycom": {
     "autoscan": true,
     "custom": {
-      "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue"
+      "^uv-(.*)": "@climblee/uv-ui/components/uv-$1/uv-$1.vue",
+      "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
     }
   }
 }

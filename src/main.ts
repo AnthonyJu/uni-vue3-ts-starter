@@ -1,4 +1,5 @@
 import { createSSRApp } from 'vue'
+import { createPersistedState } from 'pinia-plugin-persistedstate'
 import App from './App.vue'
 
 import 'uno.css'
@@ -6,10 +7,15 @@ import 'uno.css'
 export function createApp() {
   const app = createSSRApp(App)
 
-  // 版本暂时固定 2.0.36
-  // 否则会报错："hasInjectionContext" is not exported by xxx
-  // https://github.com/vuejs/pinia/issues/2228
   const pinia = createPinia()
+  pinia.use(
+    createPersistedState({
+      storage: {
+        getItem: uni.getStorageSync,
+        setItem: uni.setStorageSync,
+      },
+    }),
+  )
   app.use(pinia)
 
   return {

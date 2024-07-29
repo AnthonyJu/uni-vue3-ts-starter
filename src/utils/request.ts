@@ -32,10 +32,14 @@ request.interceptors.response.use(
         icon: 'error',
       })
 
+      uni.$emit('z-paging-error-emit')
+
       return Promise.reject(new Error(res.message || 'Error'))
     }
     // 200: 正常
-    else return response
+    else {
+      return res
+    }
   },
   (error) => {
     let msg = error.message
@@ -47,6 +51,8 @@ request.interceptors.response.use(
       title: msg,
       icon: 'error',
     })
+
+    uni.$emit('z-paging-error-emit')
 
     return Promise.reject(error)
   },

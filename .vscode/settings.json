@@ -16,7 +16,9 @@
     "Vitesse",
     "vitest",
     "vueuse",
-    "Weapp"
+    "Weapp",
+    "WXML",
+    "WXSS"
   ],
 
   // Disable the default formatter
@@ -31,7 +33,7 @@
   },
 
   // Enable the ESlint flat config support
-  "eslint.experimental.useFlatConfig": true,
+  "eslint.useFlatConfig": true,
 
   // Silent the stylistic rules in you IDE, but still auto fix them
   "eslint.rules.customizations": [
@@ -62,7 +64,6 @@
   ],
 
   "explorer.fileNesting.patterns": {
-    ".env": ".env.*",
-    "vite.config.*": "pages.config.*, manifest.config.*, uno.config.*, volar.config.*,tsconfig.*"
+    ".env": ".env.*"
   }
 }

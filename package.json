@@ -63,9 +63,12 @@
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-4020320240703001",
     "@uni-helper/axios-adapter": "^1.5.2",
     "axios": "^1.7.2",
-    "pinia": "2.0.36",
+    "dayjs": "^1.11.12",
+    "pinia": "^2.0.36",
+    "pinia-plugin-persistedstate": "^3.2.1",
     "vue": "^3.4.21",
-    "vue-i18n": "^9.13.1"
+    "vue-i18n": "^9.13.1",
+    "z-paging": "^2.7.11"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.24.0",
@@ -78,6 +81,8 @@
     "@dcloudio/uni-stacktracey": "3.0.0-alpha-4020320240703001",
     "@dcloudio/vite-plugin-uni": "3.0.0-alpha-4020320240703001",
     "@esbuild/darwin-x64": "0.18.20",
+    "@types/node": "^20.14.13",
+    "@types/weixin-app": "^2.9.7",
     "@unocss/eslint-config": "^0.61.6",
     "@vue/runtime-core": "^3.4.34",
     "@vue/tsconfig": "^0.5.1",
@@ -85,6 +90,7 @@
     "eslint-plugin-format": "^0.1.2",
     "lint-staged": "^15.2.7",
     "sass": "^1.77.8",
+    "sass-loader": "^16.0.0",
     "simple-git-hooks": "^2.11.1",
     "stylelint": "^16.7.0",
     "taze": "^0.16.1",
