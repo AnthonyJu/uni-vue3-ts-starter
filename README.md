@@ -23,3 +23,5 @@
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 
 - 🦾 [TypeScript](https://www.typescriptlang.org/)，当然
+
+- 📑 [ZPaging](https://z-paging.zxlee.cn/)，全平台兼容，支持自定义下拉刷新、上拉加载更多等等
