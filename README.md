@@ -24,4 +24,7 @@
 
 - 🦾 [TypeScript](https://www.typescriptlang.org/)，当然
 
-- 📑 [ZPaging](https://z-paging.zxlee.cn/)，全平台兼容，支持自定义下拉刷新、上拉加载更多等等
+## 插件(从插件库安装)
+
+- [uv-ui](https://ext.dcloud.net.cn/plugin?id=12287) 一款基于uni-app的UI组件库,支持vue3.0
+- [z-paging](https://ext.dcloud.net.cn/plugin?id=3935) 全平台兼容，支持自定义下拉刷新、上拉加载更多等等

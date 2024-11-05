@@ -13,7 +13,6 @@
       "vite/client",
       "weixin-app",
       "@dcloudio/types",
-      "z-paging/global.d.ts"
     ],
     "sourceMap": true
   },
