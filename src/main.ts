@@ -1,5 +1,5 @@
-import { createSSRApp } from 'vue'
 import { createPersistedState } from 'pinia-plugin-persistedstate'
+import { createSSRApp } from 'vue'
 import App from './App.vue'
 
 import 'uno.css'
