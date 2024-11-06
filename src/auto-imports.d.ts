@@ -16,6 +16,10 @@ declare global {
   const defineComponent: typeof import('vue')['defineComponent']
   const defineStore: typeof import('pinia')['defineStore']
   const effectScope: typeof import('vue')['effectScope']
+  const generateRandomAvatar: typeof import('./utils/local-mock')['generateRandomAvatar']
+  const generateRandomFloat: typeof import('./utils/local-mock')['generateRandomFloat']
+  const generateRandomNickname: typeof import('./utils/local-mock')['generateRandomNickname']
+  const generateRandomNumber: typeof import('./utils/local-mock')['generateRandomNumber']
   const getActivePinia: typeof import('pinia')['getActivePinia']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
@@ -123,6 +127,10 @@ declare module 'vue' {
     readonly defineComponent: UnwrapRef<typeof import('vue')['defineComponent']>
     readonly defineStore: UnwrapRef<typeof import('pinia')['defineStore']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
+    readonly generateRandomAvatar: UnwrapRef<typeof import('./utils/local-mock')['generateRandomAvatar']>
+    readonly generateRandomFloat: UnwrapRef<typeof import('./utils/local-mock')['generateRandomFloat']>
+    readonly generateRandomNickname: UnwrapRef<typeof import('./utils/local-mock')['generateRandomNickname']>
+    readonly generateRandomNumber: UnwrapRef<typeof import('./utils/local-mock')['generateRandomNumber']>
     readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>

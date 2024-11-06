@@ -1,0 +1,306 @@
+/* 顶部背景 start */
+.top-bg {
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: -1;
+  width: 100%;
+  background:
+    url("https://resource.tuniaokj.com/images/my/my-bg4.png")
+    no-repeat;
+  background-size: 100% auto;
+
+  &::before {
+    display: block;
+    padding-top: 100%;
+    content: "";
+  }
+}
+
+/* 页面内容 start */
+.page {
+  position: relative;
+  width: 100%;
+  padding: 0rpx 30rpx;
+
+  /* 用户信息 start */
+  .user-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .info-content {
+      display: flex;
+      align-items: center;
+
+      .avatar {
+        position: relative;
+        width: 110rpx;
+        height: 110rpx;
+        border-radius: 50%;
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 116%;
+          height: 116%;
+          content: "";
+          background-color: rgb(255 255 255 / 50%);
+          border-radius: 50%;
+          box-shadow: 0rpx 0rpx 80rpx 0rpx rgb(0 0 0 / 15%);
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .content {
+        margin-left: 28rpx;
+
+        .nickname {
+          margin-bottom: 12rpx;
+          font-size: 38rpx;
+          font-weight: bold;
+        }
+
+        .uid {
+          display: flex;
+          align-items: center;
+
+          .label-text {
+            font-size: 34rpx;
+            color: var(--tn-color-gray);
+          }
+
+          .copy {
+            margin-left: 10rpx;
+            color: var(--tn-color-grey);
+          }
+        }
+      }
+    }
+
+    .setting-icon {
+      font-size: 50rpx;
+      color: var(--tn-color-gray);
+    }
+  }
+
+  /* 授权登录 start */
+  .login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 20rpx 0rpx;
+    line-height: 1;
+    color: #fff;
+    background-color: #1d2541;
+    border-radius: 1000rpx;
+
+    .icon {
+      margin-right: 20rpx;
+      font-size: 42rpx;
+    }
+  }
+
+  /* 会员权益 start */
+  .member-rights {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30rpx 40rpx;
+    margin-top: 60rpx;
+    background: linear-gradient(-120deg, #3e445a, #31374a, #2b3042, #262b3c);
+    border-radius: 20rpx;
+
+    &::before {
+      z-index: -1;
+    }
+
+    .member-content {
+      position: relative;
+      z-index: 3;
+
+      .grade {
+        font-size: 42rpx;
+        font-weight: bold;
+        background-image: linear-gradient(360deg, #ffe3a3, #feeacc);
+      }
+
+      .desc {
+        margin-top: 16rpx;
+        font-size: 26rpx;
+        color: rgb(255 255 255 / 70%);
+      }
+    }
+
+    .rights-btn {
+      position: relative;
+      z-index: 3;
+      width: 160rpx;
+      padding: 14rpx 0;
+      font-weight: bold;
+      color: #634738;
+      background-color: #f1c68e;
+      border-radius: 1000rpx;
+
+      &::before {
+        z-index: 1;
+      }
+    }
+
+    /* 图片波浪 start */
+    .image-wave-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: inherit;
+
+      .image-wave {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        background: url("https://resource.tuniaokj.com/images/wave/wave-2.png");
+        background-repeat: repeat no-repeat;
+        background-position: 0 bottom;
+        animation-name: wave-animation;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        &:nth-child(1) {
+          background-size: 50% 45px;
+          opacity: 0.1;
+          animation-duration: 4s;
+        }
+
+        &:nth-child(2) {
+          background-size: 50% 50px;
+          opacity: 0.2;
+          animation-duration: 3.5s;
+        }
+
+        &:nth-child(3) {
+          background-size: 50% 35px;
+          opacity: 0.3;
+          animation-duration: 2s;
+        }
+      }
+    }
+  }
+
+  /* 分类 start */
+  .category {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 40rpx 0rpx;
+    margin-top: 60rpx;
+    background-color: #fff;
+    border-radius: 12rpx;
+
+    .category-item {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        position: relative;
+        font-size: 50rpx;
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 20rpx;
+          height: 20rpx;
+          content: "";
+          background-color: var(--tn-color-blue-light);
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .title {
+        margin-top: 14rpx;
+      }
+    }
+  }
+
+  /* 列表 start */
+  .list {
+    position: relative;
+    width: 100%;
+    padding: 20rpx 30rpx;
+    margin-top: 40rpx;
+    background-color: #fff;
+    border-radius: 12rpx;
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 20rpx 0rpx;
+
+      .left {
+        display: flex;
+        flex: 1;
+        align-items: center;
+
+        .icon {
+          font-size: 40rpx;
+          color: #7c8191;
+        }
+
+        .left-text {
+          margin-left: 12rpx;
+        }
+      }
+
+      .right {
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        .icon {
+          font-size: 32rpx;
+          color: var(--tn-color-gray);
+        }
+
+        .right-text {
+          font-size: 26rpx;
+        }
+      }
+    }
+  }
+}
+
+/* 页脚 start */
+.footer {
+  margin-top: 30rpx;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
