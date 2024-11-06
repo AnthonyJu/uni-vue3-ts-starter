@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@climblee/uv-ui':
-        specifier: ^1.1.20
-        version: 1.1.20
       '@dcloudio/uni-app':
         specifier: 3.0.0-alpha-4030220241101001
         version: 3.0.0-alpha-4030220241101001(@dcloudio/types@3.4.14)(@nuxt/kit@3.13.2(rollup@4.24.4)(webpack-sources@3.2.3))(postcss@8.4.47)(rollup@4.24.4)(vue@3.4.21(typescript@5.6.3))(webpack-sources@3.2.3)
@@ -923,9 +920,6 @@ packages:
     resolution: {integrity: sha512-0MhX9/B4iL6Re04jPrttDm+BsP8y6mS7byuv0BvXgdXhbV5PdlsHt55dvNsuBCPZ7xq1oTAOOuotR9NFbQyMSA==}
     bundledDependencies:
       - is-unicode-supported
-
-  '@climblee/uv-ui@1.1.20':
-    resolution: {integrity: sha512-jkyesHJsPJkF4Nap9ZmG1/ibKlxXA5M8+ntqKXwwloIsYSYL5SOKb0gyPj17aBOU1PkJpmeiZ8PwnTolhK2/HA==}
 
   '@csstools/css-parser-algorithms@3.0.4':
     resolution: {integrity: sha512-Up7rBoV77rv29d3uKHUIVubz1BTcgyUK72IvCQAbfbMv584xHcGKCKbWh7i8hPrRJ7qU4Y8IO3IY9m+iTB7P3A==}
@@ -7271,8 +7265,6 @@ snapshots:
       '@clack/core': 0.3.4
       picocolors: 1.1.1
       sisteransi: 1.0.5
-
-  '@climblee/uv-ui@1.1.20': {}
 
   '@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3)':
     dependencies:

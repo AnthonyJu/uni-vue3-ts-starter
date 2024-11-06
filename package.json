@@ -45,7 +45,6 @@
     "postinstall": "npx simple-git-hooks"
   },
   "dependencies": {
-    "@climblee/uv-ui": "^1.1.20",
     "@dcloudio/uni-app": "3.0.0-alpha-4030220241101001",
     "@dcloudio/uni-app-harmony": "3.0.0-alpha-4030220241101001",
     "@dcloudio/uni-app-plus": "3.0.0-alpha-4030220241101001",
