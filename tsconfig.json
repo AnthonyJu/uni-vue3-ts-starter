@@ -11,7 +11,7 @@
     },
     "types": [
       "vite/client",
-      "weixin-app",
+      "miniprogram-api-typings",
       "@dcloudio/types",
       "@tuniao/tnui-vue3-uniapp/global.d.ts"
     ],

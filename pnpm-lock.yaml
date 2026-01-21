@@ -123,9 +123,6 @@ importers:
       '@types/node':
         specifier: ^20.19.30
         version: 20.19.30
-      '@types/weixin-app':
-        specifier: ^2.9.7
-        version: 2.9.7
       '@unocss/eslint-config':
         specifier: ^0.63.6
         version: 0.63.6(eslint@9.14.0(jiti@2.6.1))(typescript@5.9.3)
@@ -147,6 +144,9 @@ importers:
       lint-staged:
         specifier: ^15.2.10
         version: 15.2.10
+      miniprogram-api-typings:
+        specifier: ^5.0.0
+        version: 5.0.0
       sass:
         specifier: ^1.77.6
         version: 1.77.6
@@ -2472,9 +2472,6 @@ packages:
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
-
-  '@types/weixin-app@2.9.7':
-    resolution: {integrity: sha512-06BST63ZlS6SoJEL3nez/f6iy6Eq9WDjVVVAfcNkazp+ckX6icvkx/qQxSTtQ6z++TxouJtpcpydP2ANQYhGxA==}
 
   '@types/yargs-parser@21.0.3':
     resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==}
@@ -5079,6 +5076,9 @@ packages:
   minipass@5.0.0:
     resolution: {integrity: sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==}
     engines: {node: '>=8'}
+
+  miniprogram-api-typings@5.0.0:
+    resolution: {integrity: sha512-KQ1ZDk0cK3JrAaZtlFNlC/De/HwqhtToPZTzIYvFzi4FaW0Z8raIBN/qpjZ5QMiBaBNl/hJwTWwD+tfp8BwCZw==}
 
   minizlib@2.1.2:
     resolution: {integrity: sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==}
@@ -10308,8 +10308,6 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
-  '@types/weixin-app@2.9.7': {}
-
   '@types/yargs-parser@21.0.3': {}
 
   '@types/yargs@16.0.11':
@@ -13683,6 +13681,8 @@ snapshots:
 
   minipass@5.0.0:
     optional: true
+
+  miniprogram-api-typings@5.0.0: {}
 
   minizlib@2.1.2:
     dependencies:
