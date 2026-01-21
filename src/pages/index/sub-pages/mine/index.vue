@@ -165,7 +165,6 @@
 <script setup lang="ts">
 import PageContainer from '@/components/page-container/index.vue'
 import { useSubPageProvide } from '@/pages/index/composables'
-import { generateRandomNumber } from '@/utils/local-mock'
 import TnButton from '@tuniao/tnui-vue3-uniapp/components/button/src/button.vue'
 import TnIcon from '@tuniao/tnui-vue3-uniapp/components/icon/src/icon.vue'
 import { useUniAppSystemRectInfo } from '@tuniao/tnui-vue3-uniapp/hooks'

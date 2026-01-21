@@ -99,6 +99,9 @@ declare global {
   const useCssVars: typeof import('vue')['useCssVars']
   const useId: typeof import('vue')['useId']
   const useModel: typeof import('vue')['useModel']
+  const useScrollHiddenBottomContent: typeof import('./hooks/use-scroll-hidden-bottom-content/index')['useScrollHiddenBottomContent']
+  const useScrollTransparentNavbar: typeof import('./hooks/use-scroll-transparent-navbar/index')['useScrollTransparentNavbar']
+  const useScrollUpdownBottomContent: typeof import('./hooks/use-scroll-updown-bottom-content/index')['useScrollUpdownBottomContent']
   const useSlots: typeof import('vue')['useSlots']
   const useTemplateRef: typeof import('vue')['useTemplateRef']
   const watch: typeof import('vue')['watch']
@@ -210,6 +213,9 @@ declare module 'vue' {
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useId: UnwrapRef<typeof import('vue')['useId']>
     readonly useModel: UnwrapRef<typeof import('vue')['useModel']>
+    readonly useScrollHiddenBottomContent: UnwrapRef<typeof import('./hooks/use-scroll-hidden-bottom-content/index')['useScrollHiddenBottomContent']>
+    readonly useScrollTransparentNavbar: UnwrapRef<typeof import('./hooks/use-scroll-transparent-navbar/index')['useScrollTransparentNavbar']>
+    readonly useScrollUpdownBottomContent: UnwrapRef<typeof import('./hooks/use-scroll-updown-bottom-content/index')['useScrollUpdownBottomContent']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useTemplateRef: UnwrapRef<typeof import('vue')['useTemplateRef']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>

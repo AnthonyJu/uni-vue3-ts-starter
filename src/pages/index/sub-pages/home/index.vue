@@ -51,9 +51,8 @@
 
 <script setup lang="ts">
 import PageContainer from '@/components/page-container/index.vue'
-import { useScrollTransparentNavbar } from '@/hooks'
+import { useSubPageProvide } from '@/pages/index/composables'
 import TnSwiper from '@tuniao/tnui-vue3-uniapp/components/swiper/src/swiper.vue'
-import { useSubPageProvide } from '../../composables'
 
 const instance = getCurrentInstance()
 

@@ -45,6 +45,7 @@ export default defineConfig(async ({ mode }) => {
         dirs: [
           'src/stores',
           'src/utils',
+          'src/hooks',
         ],
         vueTemplate: true,
         dts: 'src/auto-imports.d.ts',
@@ -54,7 +55,6 @@ export default defineConfig(async ({ mode }) => {
       Components({
         dts: 'src/components.d.ts',
         include: [/\.vue$/, /\.vue\?vue/],
-        exclude: ['src/components/**/components/**/*'],
       }),
 
       // https://github.com/antfu/unocss
