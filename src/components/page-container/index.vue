@@ -5,7 +5,7 @@
     :style="{ paddingTop: `${hidePaddingTop ? 0 : navbarHeight}px` }"
   >
     <!-- 顶部导航 -->
-    <tn-navbar
+    <TnNavbar
       v-if="title || $slots.title"
       :fixed="true"
       :bottom-shadow="false"
@@ -26,7 +26,7 @@
       <template #right>
         <slot name="right" />
       </template>
-    </tn-navbar>
+    </TnNavbar>
 
     <!-- 内容 -->
     <slot />
@@ -34,6 +34,7 @@
 </template>
 
 <script setup lang="ts">
+import TnNavbar from '@tuniao/tnui-vue3-uniapp/components/navbar/src/navbar.vue'
 import SlotBack from '../slot-back/index.vue'
 
 const props = defineProps<{

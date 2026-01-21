@@ -15,18 +15,18 @@
             <view class="uid">
               <view class="label-text">uid: {{ userInfo?.uid }}</view>
               <view class="copy">
-                <tn-icon name="copy" />
+                <TnIcon name="copy" />
               </view>
             </view>
           </view>
         </view>
         <view class="setting-icon">
-          <tn-icon name="install" />
+          <TnIcon name="install" />
         </view>
       </view>
       <view v-else class="login-btn tn-shadow" @tap.stop="loginHandle">
         <view class="icon">
-          <tn-icon name="wechat" />
+          <TnIcon name="wechat" />
         </view>
         <view class="label-text">授权登录</view>
       </view>
@@ -39,7 +39,7 @@
         <view class="member-content">
           <view class="grade tn-text-transparent flex items-center">
             <view class="mr-10rpx text-48rpx text-#ffe3a3">
-              <tn-icon name="vip" />
+              <TnIcon name="vip" />
             </view>
             VIP
           </view>
@@ -61,28 +61,28 @@
       <view class="tn-shadow category">
         <view class="category-item" @tap.stop="navMoneyInfoPage">
           <view class="icon">
-            <tn-icon name="lucky-money" />
+            <TnIcon name="lucky-money" />
           </view>
           <view class="title">我的钱包</view>
         </view>
 
         <view class="category-item" @tap.stop="$emit('setTabBar', 1)">
           <view class="icon">
-            <tn-icon name="order" />
+            <TnIcon name="order" />
           </view>
           <view class="title">我的订单</view>
         </view>
 
         <view class="category-item" @tap.stop="navFollowInfoPage">
           <view class="icon">
-            <tn-icon name="star" />
+            <TnIcon name="star" />
           </view>
           <view class="title">我的关注</view>
         </view>
 
         <view class="category-item" @tap.stop="navProblemInfoPage">
           <view class="icon">
-            <tn-icon name="help" />
+            <TnIcon name="help" />
           </view>
           <view class="title">常见问题</view>
         </view>
@@ -94,13 +94,13 @@
           <view class="list-item">
             <view class="left">
               <view class="icon">
-                <tn-icon name="trust" />
+                <TnIcon name="trust" />
               </view>
               <view class="left-text"> 服务协议 </view>
             </view>
             <view class="right">
               <view class="icon">
-                <tn-icon name="right" />
+                <TnIcon name="right" />
               </view>
             </view>
           </view>
@@ -109,13 +109,13 @@
           <view class="list-item">
             <view class="left">
               <view class="icon">
-                <tn-icon name="safe" />
+                <TnIcon name="safe" />
               </view>
               <view class="left-text"> 隐私政策 </view>
             </view>
             <view class="right">
               <view class="icon">
-                <tn-icon name="right" />
+                <TnIcon name="right" />
               </view>
             </view>
           </view>
@@ -128,13 +128,13 @@
           <view class="list-item">
             <view class="left">
               <view class="icon">
-                <tn-icon name="edit-form" />
+                <TnIcon name="edit-form" />
               </view>
               <view class="left-text"> 意见反馈 </view>
             </view>
             <view class="right">
               <view class="icon">
-                <tn-icon name="right" />
+                <TnIcon name="right" />
               </view>
             </view>
           </view>
@@ -143,13 +143,13 @@
           <view class="list-item">
             <view class="left">
               <view class="icon">
-                <tn-icon name="company" />
+                <TnIcon name="company" />
               </view>
               <view class="left-text"> 关于我们 </view>
             </view>
             <view class="right">
               <view class="icon">
-                <tn-icon name="right" />
+                <TnIcon name="right" />
               </view>
             </view>
           </view>
@@ -165,9 +165,11 @@
 <script setup lang="ts">
 import PageContainer from '@/components/page-container/index.vue'
 import { useSubPageProvide } from '@/pages/index/composables'
-import { useUniAppSystemRectInfo } from '@/uni_modules/tuniaoui-vue3/hooks'
-import { tnNavPage } from '@/uni_modules/tuniaoui-vue3/utils'
 import { generateRandomNumber } from '@/utils/local-mock'
+import TnButton from '@tuniao/tnui-vue3-uniapp/components/button/src/button.vue'
+import TnIcon from '@tuniao/tnui-vue3-uniapp/components/icon/src/icon.vue'
+import { useUniAppSystemRectInfo } from '@tuniao/tnui-vue3-uniapp/hooks'
+import { tnNavPage } from '@tuniao/tnui-vue3-uniapp/utils'
 
 const { navBarInfo } = useUniAppSystemRectInfo()
 

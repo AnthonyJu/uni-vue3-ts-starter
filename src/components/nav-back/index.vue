@@ -1,6 +1,6 @@
 <template>
   <!-- 顶部导航 -->
-  <tn-navbar
+  <TnNavbar
     :fixed="false"
     :bottom-shadow="false"
     :placeholder="false"
@@ -22,11 +22,12 @@
     <template #right>
       <slot name="right" />
     </template>
-  </tn-navbar>
+  </TnNavbar>
 </template>
 
 <script setup lang="ts">
-import { useUniAppSystemRectInfo } from '@/uni_modules/tuniaoui-vue3'
+import { useUniAppSystemRectInfo } from '@tuniao/tnui-vue3-uniapp'
+import TnNavbar from '@tuniao/tnui-vue3-uniapp/components/navbar/src/navbar.vue'
 import SlotBack from '../slot-back/index.vue'
 
 const props = defineProps<{

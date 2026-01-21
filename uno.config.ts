@@ -1,3 +1,4 @@
+import type { Preset } from 'unocss'
 import process from 'node:process'
 import {
   defineConfig,
@@ -5,14 +6,13 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+
 import {
   presetApplet,
   presetRemRpx,
   transformerApplet,
   transformerAttributify,
 } from 'unocss-applet'
-
-import type { Preset } from 'unocss'
 
 const isH5 = process.env?.UNI_PLATFORM === 'h5'
 const isMp = process.env?.UNI_PLATFORM?.startsWith('mp') ?? false
@@ -37,7 +37,7 @@ export default defineConfig({
     'full': 'w-full h-full',
     'flex-col': 'flex flex-col',
     'flex-items': 'flex items-center',
-    'flex-b-c': 'flex justify-between items-center',
+    'flex-bc': 'flex justify-between items-center',
     'flex-center': 'flex justify-center items-center',
     'flex-col-center': 'flex flex-col justify-center items-center',
   },

@@ -24,7 +24,8 @@
 
 - 🦾 [TypeScript](https://www.typescriptlang.org/)，当然
 
+- 🥡 [图鸟UI](https://ext.dcloud.net.cn/plugin?id=13530) 默认 UI 框架
+
 ## 插件(从插件库安装)
 
-- [图鸟UI](https://ext.dcloud.net.cn/plugin?id=13530) 图鸟UI vue3 uniapp版本
 - [z-paging](https://ext.dcloud.net.cn/plugin?id=3935) 全平台兼容，支持自定义下拉刷新、上拉加载更多等等

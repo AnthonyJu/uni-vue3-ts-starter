@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'vue'
-import { throttle } from '@/uni_modules/tuniaoui-vue3/utils'
+import { throttle } from '@tuniao/tnui-vue3-uniapp/utils'
 import { computed, ref } from 'vue'
 
 type UpDownOperationType = 'up' | 'down'

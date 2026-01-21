@@ -8,6 +8,10 @@
           "rpx"
         ]
       }
-    ]
-  }
+    ],
+    "scss/at-import-partial-extension": null
+  },
+  "ignoreFiles": [
+    "src/uni_modules/**"
+  ]
 }

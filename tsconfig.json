@@ -13,6 +13,7 @@
       "vite/client",
       "weixin-app",
       "@dcloudio/types",
+      "@tuniao/tnui-vue3-uniapp/global.d.ts"
     ],
     "sourceMap": true
   },

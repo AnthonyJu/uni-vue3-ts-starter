@@ -1,6 +1,6 @@
 import type { ComponentInternalInstance } from 'vue'
-import { useSelectorQuery } from '@/uni_modules/tuniaoui-vue3/hooks'
-import { debugWarn, generateId } from '@/uni_modules/tuniaoui-vue3/utils'
+import { useSelectorQuery } from '@tuniao/tnui-vue3-uniapp'
+import { debugWarn, generateId } from '@tuniao/tnui-vue3-uniapp/utils'
 
 import { nextTick, ref } from 'vue'
 

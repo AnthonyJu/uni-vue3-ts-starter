@@ -34,16 +34,17 @@
       </view>
     </template>
 
-    <tn-swiper :data="swiperData" width="100%" height="500rpx" indicator loop>
+    <TnSwiper :data="swiperData" width="100%" height="500rpx" indicator loop>
       <template #default="{ data }">
         <image class="tn-image" :src="data" mode="aspectFill" />
       </template>
-    </tn-swiper>
+    </TnSwiper>
 
     <view :id="triggerElementId" class="mb-20rpx full flex-col-center text-center">
       <image class="my-50rpx h-200rpx w-200rpx" src="/static/logo.png" />
       <text class="text-40rpx text-red" bg-blue p="2">uniapp</text>
     </view>
+
     <view class="h-1400px bg-amber" />
   </PageContainer>
 </template>
@@ -51,6 +52,7 @@
 <script setup lang="ts">
 import PageContainer from '@/components/page-container/index.vue'
 import { useScrollTransparentNavbar } from '@/hooks'
+import TnSwiper from '@tuniao/tnui-vue3-uniapp/components/swiper/src/swiper.vue'
 import { useSubPageProvide } from '../../composables'
 
 const instance = getCurrentInstance()

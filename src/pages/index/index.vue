@@ -23,7 +23,7 @@
   </view>
 
   <!-- 底部导航栏 -->
-  <tn-tabbar
+  <TnTabbar
     v-model="currentTabbarIndex"
     :fixed="true"
     frosted
@@ -32,7 +32,7 @@
     font-size="20"
     @change="tabbarChangeHandle"
   >
-    <tn-tabbar-item
+    <TnTabbarItem
       v-for="(item, index) in tabbarData"
       :key="index"
       :text="item.text"
@@ -41,10 +41,12 @@
       :bulge="index === 2"
       :icon-size="index === 2 ? '56' : ''"
     />
-  </tn-tabbar>
+  </TnTabbar>
 </template>
 
 <script setup lang="ts">
+import TnTabbar from '@tuniao/tnui-vue3-uniapp/components/tabbar/src/tabbar.vue'
+import TnTabbarItem from '@tuniao/tnui-vue3-uniapp/components/tabbar/src/tabbar-item.vue'
 import { useIndex } from './composables'
 
 /* 引入子页面 */

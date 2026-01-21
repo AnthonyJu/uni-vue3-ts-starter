@@ -16,6 +16,6 @@ onHide(() => {
 </script>
 
 <style lang="scss">
-@import "@/styles/index";
-@import "@/uni_modules/tuniaoui-vue3/index.css";
+@import "@/styles/index.scss";
+@import "@tuniao/tn-style/dist/uniapp/index.css";
 </style>

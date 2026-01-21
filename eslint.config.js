@@ -8,5 +8,6 @@ module.exports = antfu({
   formatters: {
     css: false,
     html: true,
+    markdown: true,
   },
 })
