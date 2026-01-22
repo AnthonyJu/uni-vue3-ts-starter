@@ -1,6 +1,6 @@
 import type { IndexSubPageContext } from '../tokens'
 
-import { useOrderedChildren } from '@tuniao/tnui-vue3-uniapp'
+import { useOrderedChildren } from '@tuniao/tnui-vue3-uniapp/hooks'
 import { indexPageContextKey } from '../tokens'
 
 interface TabbarItem {

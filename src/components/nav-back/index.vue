@@ -26,9 +26,9 @@
 </template>
 
 <script setup lang="ts">
-import SlotBack from '@/components/slot-back/index.vue'
-import { useUniAppSystemRectInfo } from '@tuniao/tnui-vue3-uniapp'
 import TnNavbar from '@tuniao/tnui-vue3-uniapp/components/navbar/src/navbar.vue'
+import { useUniAppSystemRectInfo } from '@tuniao/tnui-vue3-uniapp/hooks'
+import SlotBack from '@/components/slot-back/index.vue'
 
 const props = defineProps<{
   title?: string
